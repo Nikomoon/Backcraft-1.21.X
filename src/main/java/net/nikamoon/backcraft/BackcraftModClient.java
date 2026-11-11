@@ -1,4 +1,4 @@
-package net.nikamoon.backcraft;
+package net.kaupenjoe.tutorialmod;
 
 import net.fabricmc.api.ClientModInitializer;
 

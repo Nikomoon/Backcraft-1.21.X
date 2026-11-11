@@ -1,0 +1,12 @@
+{
+  "block.backcraft.back_planks": "Back Planks",
+  "block.backcraft.back_stone": "Back Stone",
+  "block.backcraft.back_brick": "Back Brick",
+  "block.backcraft.back_gem": "Back Gem Block",
+  "block.backcraft.back_log": "Back Log",
+  "block.backcraft.back_growth": "Undergrowth",
+  "block.backcraft.back_cobble": "Back Cobble",
+  "block.backcraft.back_ground": "Carpet",
+
+  "itemgroup.backcraft.back_craft_items": "Backcraft"
+}
