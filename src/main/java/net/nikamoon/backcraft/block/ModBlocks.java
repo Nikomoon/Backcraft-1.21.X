@@ -1,7 +1,8 @@
 package net.nikamoon.backcraft.block;
 
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
+import net.minecraft.block.*;
+import net.minecraft.block.enums.NoteBlockInstrument;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
@@ -9,6 +10,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.nikamoon.backcraft.Backcraft;
+import net.nikamoon.backcraft.block.custom.StoveBlock;
+import net.nikamoon.backcraft.block.custom.TableBlock;
 
 public class ModBlocks {
 
@@ -28,13 +31,39 @@ public class ModBlocks {
             new Block(AbstractBlock.Settings.create().strength(0.5F).sounds(BlockSoundGroup.GRAVEL)));
 
     public static final Block LOG = registerBlock("back_log",
-            new Block(AbstractBlock.Settings.create().strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable()));
+            new PillarBlock(AbstractBlock.Settings.create().strength(2.0F).sounds(BlockSoundGroup.WOOD).burnable()));
 
     public static final Block UNDERGROWTH = registerBlock("back_growth",
             new Block(AbstractBlock.Settings.create().strength(0.6F).sounds(BlockSoundGroup.GRASS)));
 
     public static final Block COBBLE = registerBlock("back_cobble",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F)));
+
+    public static final Block BACK_DOOR = registerBlock("back_door",
+            new DoorBlock(BlockSetType.OAK,
+                    AbstractBlock.Settings.create()
+                            .instrument(NoteBlockInstrument.BASS)
+                            .strength(3.0F)
+                            .burnable()
+                            .pistonBehavior(PistonBehavior.DESTROY)
+            )
+    );
+
+    public static final Block TABLE = registerBlock("back_table",
+            new TableBlock(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
+
+    public static final Block STOVE = registerBlock("back_stove",
+            new StoveBlock(			AbstractBlock.Settings.create()
+                    .requiresTool()
+                    .strength(3.5F)
+            )
+    );
+
+
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Backcraft.MOD_ID, name), block);
+    }
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
@@ -46,8 +75,7 @@ public class ModBlocks {
                 new BlockItem(block, new Item.Settings()));
     }
 
-
-    public static void registermodblocks() {
+    public static void registerModBlocks() {
         Backcraft.LOGGER.info("Registering Mod Blocks for " + Backcraft.MOD_ID);
 
     }

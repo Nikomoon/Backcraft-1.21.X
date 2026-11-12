@@ -24,6 +24,9 @@ public class ModItemGroups {
                         entries.add(ModBlocks.UNDERGROWTH);
                         entries.add(ModBlocks.BACKSTONE);
                         entries.add(ModBlocks.COBBLE);
+                        entries.add(ModBlocks.BACK_DOOR);
+                        entries.add(ModBlocks.TABLE);
+                        entries.add(ModBlocks.STOVE);
 
                     }).build());
 

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "backcraft:block/back_stove" },
+    "facing=south": { "model": "backcraft:block/back_stove", "y": 180 },
+    "facing=west":  { "model": "backcraft:block/back_stove", "y": 270 },
+    "facing=east":  { "model": "backcraft:block/back_stove", "y": 90 }
+  }
+}

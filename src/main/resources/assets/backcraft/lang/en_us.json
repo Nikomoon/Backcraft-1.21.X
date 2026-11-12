@@ -7,6 +7,11 @@
   "block.backcraft.back_growth": "Undergrowth",
   "block.backcraft.back_cobble": "Back Cobble",
   "block.backcraft.back_ground": "Carpet",
+  "block.backcraft.back_door": "Door",
+  "block.backcraft.back_table": "Table",
+  "block.backcraft.table": "Table",
+  "block.backcraft.back_stove": "Stove",
+  "block.backcraft.stove": "Stove",
 
   "itemgroup.backcraft.back_craft_items": "Backcraft"
 }
