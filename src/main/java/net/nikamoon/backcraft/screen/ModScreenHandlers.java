@@ -2,6 +2,7 @@ package net.nikamoon.backcraft.screen;
 
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerType;
 import net.nikamoon.backcraft.Backcraft;
+import net.nikamoon.backcraft.screen.custom.BackCraftingTableHandler;
 import net.nikamoon.backcraft.screen.custom.StoveScreenHandler;
 import net.nikamoon.backcraft.screen.custom.TableScreenHandler;
 import net.minecraft.registry.Registries;

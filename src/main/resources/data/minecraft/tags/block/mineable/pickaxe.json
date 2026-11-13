@@ -3,6 +3,10 @@
     "backcraft:back_gem",
     "backcraft:back_stone",
     "backcraft:back_brick",
-    "backcraft:back_cobble"
+    "backcraft:back_cobble",
+    "backcraft:back_stone_tile",
+    "backcraft:back_stove",
+    "backcraft:back_stove_on",
+    "backcraft:back_furnace"
   ]
 }

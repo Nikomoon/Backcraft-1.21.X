@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "down": "backcraft:block/back_planks",
+    "east": "backcraft:block/back_crafting_table_side",
+    "north": "backcraft:block/back_crafting_table_side",
+    "particle": "backcraft:block/back_crafting_table_top",
+    "south": "backcraft:block/back_crafting_table_side",
+    "up": "backcraft:block/back_crafting_table_top",
+    "west": "backcraft:block/back_crafting_table_side"
+  }
+}

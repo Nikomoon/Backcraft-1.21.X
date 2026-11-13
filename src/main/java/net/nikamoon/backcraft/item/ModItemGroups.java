@@ -17,16 +17,35 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.backcraft.back_craft_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.PLANK);
+                        entries.add(ModBlocks.TILE);
+                        entries.add(ModBlocks.SKIRTING);
+                        entries.add(ModBlocks.SKIRTING_CORNER_LEFT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_RIGHT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_U);
+                        entries.add(ModBlocks.SKIRTING_CIRCLE);
+                        entries.add(ModBlocks.SKIRTING_UP);
+                        entries.add(ModBlocks.SKIRTING_LEFT);
+                        entries.add(ModBlocks.SKIRTING_RIGHT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_UP_LEFT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_UP_RIGHT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_DOWN_LEFT);
+                        entries.add(ModBlocks.SKIRTING_CORNER_DOWN_RIGHT);
                         entries.add(ModBlocks.BRICK);
                         entries.add(ModBlocks.GEM);
                         entries.add(ModBlocks.LOG);
                         entries.add(ModBlocks.GROUND);
                         entries.add(ModBlocks.UNDERGROWTH);
                         entries.add(ModBlocks.BACKSTONE);
+                        entries.add(ModBlocks.STONE_TILE);
                         entries.add(ModBlocks.COBBLE);
                         entries.add(ModBlocks.BACK_DOOR);
+                        entries.add(ModBlocks.HALF_DOOR);
                         entries.add(ModBlocks.TABLE);
+                        entries.add(ModBlocks.BACK_CRAFTING_TABLE);
                         entries.add(ModBlocks.STOVE);
+                        entries.add(ModBlocks.STOVE_ON);
+                        entries.add(ModBlocks.BACK_FURNACE);
+                        entries.add(ModBlocks.FLOWER);
 
                     }).build());
 

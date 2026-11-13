@@ -1,6 +1,12 @@
 {
   "values": [
     "backcraft:back_log",
-    "backcraft:back_planks"
+    "backcraft:back_planks",
+    "backcraft:back_tile",
+    "backcraft:back_crafting_table",
+    "backcraft:back_skirting",
+    "backcraft:back_table",
+    "backcraft:back_half_door",
+    "backcraft:back_door"
   ]
 }

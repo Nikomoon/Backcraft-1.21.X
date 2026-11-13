@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "backcraft:block/back_crafting_table"
+    }
+  }
+}

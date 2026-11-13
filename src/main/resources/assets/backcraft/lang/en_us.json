@@ -1,17 +1,20 @@
 {
-  "block.backcraft.back_planks": "Back Planks",
-  "block.backcraft.back_stone": "Back Stone",
-  "block.backcraft.back_brick": "Back Brick",
-  "block.backcraft.back_gem": "Back Gem Block",
-  "block.backcraft.back_log": "Back Log",
+  "block.backcraft.back_planks": "Planks",
+  "block.backcraft.back_stone": "Stone?",
+  "block.backcraft.back_brick": "Brick",
+  "block.backcraft.back_gem": "Gem Block",
+  "block.backcraft.back_log": "Log",
   "block.backcraft.back_growth": "Undergrowth",
-  "block.backcraft.back_cobble": "Back Cobble",
+  "block.backcraft.back_cobble": "Cobble?",
   "block.backcraft.back_ground": "Carpet",
   "block.backcraft.back_door": "Door",
-  "block.backcraft.back_table": "Table",
+  "block.backcraft.back_table": "Crafting Table?",
   "block.backcraft.table": "Table",
-  "block.backcraft.back_stove": "Stove",
+  "block.backcraft.back_stove": "Furnace?",
   "block.backcraft.stove": "Stove",
+  "block.backcraft.back_stove_on": "Lit Furnace?",
+  "block.backcraft.back_flower": "Flower",
+  "block.backcraft.back_crafting_table": "Crafting Table",
 
   "itemgroup.backcraft.back_craft_items": "Backcraft"
 }

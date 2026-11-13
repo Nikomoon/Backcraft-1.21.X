@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "down": "backcraft:block/back_tile",
+    "east": "backcraft:block/back_planks",
+    "north": "backcraft:block/back_planks",
+    "particle": "backcraft:block/back_planks",
+    "south": "backcraft:block/back_planks",
+    "up": "backcraft:block/back_planks",
+    "west": "backcraft:block/back_planks"
+  }
+}

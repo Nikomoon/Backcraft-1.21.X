@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "backcraft:back_planks"
+    }
+  },
+  "pattern":[
+    "##",
+    "##"
+  ],
+  "result": {
+    "count":  1,
+    "id":  "backcraft:back_crafting_table"
+  }
+}

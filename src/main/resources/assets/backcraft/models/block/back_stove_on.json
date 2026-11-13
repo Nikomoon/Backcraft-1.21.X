@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "down": "backcraft:block/back_stove_side",
+    "east": "backcraft:block/back_stove_side",
+    "north": "backcraft:block/back_stove_front_on",
+    "particle": "backcraft:block/back_stove_side",
+    "south": "backcraft:block/back_stove_side",
+    "up": "backcraft:block/back_stove_side",
+    "west": "backcraft:block/back_stove_side"
+  }
+}

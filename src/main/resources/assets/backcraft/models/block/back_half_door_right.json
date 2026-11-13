@@ -1,0 +1,6 @@
+{
+  "parent": "backcraft:block/door_bottom_right",
+  "textures": {
+    "bottom": "backcraft:block/back_half_door"
+  }
+}

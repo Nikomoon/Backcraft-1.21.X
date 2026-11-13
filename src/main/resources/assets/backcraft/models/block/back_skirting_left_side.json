@@ -1,0 +1,12 @@
+{
+"parent": "minecraft:block/cube_all",
+"textures": {
+  "down": "backcraft:block/back_skirting_left",
+  "east": "backcraft:block/back_skirting_left",
+  "north": "backcraft:block/back_skirting_left",
+  "particle": "backcraft:block/back_skirting_left",
+  "south": "backcraft:block/back_skirting_left",
+  "up": "backcraft:block/back_skirting_right",
+  "west": "backcraft:block/back_skirting_left"
+  }
+}
