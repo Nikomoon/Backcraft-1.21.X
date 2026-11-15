@@ -8,13 +8,18 @@
   "block.backcraft.back_cobble": "Cobble?",
   "block.backcraft.back_ground": "Carpet",
   "block.backcraft.back_door": "Door",
+  "block.backcraft.back_half_door": "Half Door",
   "block.backcraft.back_table": "Crafting Table?",
   "block.backcraft.table": "Table",
   "block.backcraft.back_stove": "Furnace?",
+  "block.backcraft.back_furnace": "Furnace",
   "block.backcraft.stove": "Stove",
   "block.backcraft.back_stove_on": "Lit Furnace?",
   "block.backcraft.back_flower": "Flower",
+  "block.backcraft.back_tile": "Wood Tile",
+  "block.backcraft.back_stone_tile": "Stone Tile",
   "block.backcraft.back_crafting_table": "Crafting Table",
+  "block.backcraft.back_tnt": "TNT?",
 
   "itemgroup.backcraft.back_craft_items": "Backcraft"
 }

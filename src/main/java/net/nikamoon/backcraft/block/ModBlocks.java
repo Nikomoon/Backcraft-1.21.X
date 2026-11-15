@@ -1,6 +1,5 @@
 package net.nikamoon.backcraft.block;
 
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.block.piston.PistonBehavior;
@@ -87,6 +86,8 @@ public class ModBlocks {
     public static final Block SKIRTING_CORNER_DOWN_RIGHT = registerBlock("back_skirting_corner_down_right",
             new Block(AbstractBlock.Settings.create().strength(2.0F, 3.0F).sounds(BlockSoundGroup.WOOD).burnable()));
 
+
+
     public static final Block FLOWER = registerBlock(
             "back_flower",
             new FlowerBlock(
@@ -107,10 +108,20 @@ public class ModBlocks {
                     .requiresTool()
                     .strength(3.5F)
             ));
-
+    public static final Block LIGHT = registerBlock(
+            "back_ceiling_light",
+            new Block(
+                    AbstractBlock.Settings.create()
+                            .strength(0.3F)
+                            .sounds(BlockSoundGroup.GLASS)
+                            .luminance(state -> 11)
+                            .solidBlock(Blocks::never)
+            )
+    );
 
     public static final Block BACK_CRAFTING_TABLE = registerBlock("back_crafting_table",
             new BackCraftingTableBlock(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
+
 
     public static final Block BACK_DOOR = registerBlock("back_door",
             new DoorBlock(BlockSetType.OAK,
@@ -124,6 +135,9 @@ public class ModBlocks {
 
     public static final Block TABLE = registerBlock("back_table",
             new TableBlock(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
+
+    public static final Block TNT = registerBlock("back_tnt",
+            new BackTNTBlock(AbstractBlock.Settings.create().breakInstantly().sounds(BlockSoundGroup.GRASS).burnable().solidBlock(Blocks::never)));
 
     public static final Block HALF_DOOR = registerBlock("back_half_door",
             new HalfDoor(BlockSetType.OAK,
