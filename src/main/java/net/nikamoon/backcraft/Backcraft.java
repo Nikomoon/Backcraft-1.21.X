@@ -2,6 +2,7 @@ package net.nikamoon.backcraft;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
+import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.util.Identifier;
@@ -25,9 +26,8 @@ public class Backcraft implements ModInitializer {
 		HandledScreens.register(ModScreenHandlers.TABLE_SCREEN_HANDLER, TableScreen::new);
 		HandledScreens.register(ModScreenHandlers.STOVE_SCREEN_HANDLER, StoveScreen::new);
 
-
 		BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.FLOWER, RenderLayer.getCutout());
-
+		BlockEntityType.FURNACE.addSupportedBlock(ModBlocks.BACK_FURNACE);
 
 
 
@@ -40,6 +40,7 @@ public class Backcraft implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
+
 
 	}
 	public static Identifier id(String path) {

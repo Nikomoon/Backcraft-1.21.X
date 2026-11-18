@@ -9,9 +9,12 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.Registries;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
 import net.nikamoon.backcraft.Backcraft;
 import net.nikamoon.backcraft.block.custom.*;
+
+import java.util.function.ToIntFunction;
 
 public class ModBlocks {
 
@@ -41,8 +44,12 @@ public class ModBlocks {
     public static final Block COBBLE = registerBlock("back_cobble",
             new Block(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F)));
 
-    public static final Block BACK_FURNACE = registerBlock("back_furnace",
-            new FurnaceBlock(AbstractBlock.Settings.create().requiresTool().strength(2.0F, 6.0F)));
+    public static final Block BACK_FURNACE = registerBlock(
+            "back_furnace",
+            new FurnaceBlock(AbstractBlock.Settings.copy(Blocks.FURNACE)
+
+            )
+    );
 
     public static final Block TILE = registerBlock("back_tile",
             new Block(AbstractBlock.Settings.create().strength(0.15F).sounds(BlockSoundGroup.WOOD).burnable()));
@@ -133,6 +140,7 @@ public class ModBlocks {
             )
     );
 
+
     public static final Block TABLE = registerBlock("back_table",
             new TableBlock(AbstractBlock.Settings.create().strength(2.5F).sounds(BlockSoundGroup.WOOD).burnable()));
 
@@ -155,6 +163,11 @@ public class ModBlocks {
                     .strength(3.5F)
             )
     );
+
+    public static ToIntFunction<BlockState> createLightLevelFromLitBlockState(int litLevel) {
+        return state -> state.get(Properties.LIT) ? litLevel : 0;
+    }
+
 
 
 
