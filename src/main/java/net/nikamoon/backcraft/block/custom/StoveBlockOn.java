@@ -17,11 +17,6 @@ public class StoveBlockOn extends FurnaceBlock implements BlockEntityProvider {
     }
 
 
-    @Override
-    protected void openScreen(World world, BlockPos pos, PlayerEntity player) {
-
-    }
-
 
     @Nullable
     @Override

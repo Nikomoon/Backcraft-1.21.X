@@ -47,6 +47,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.BACK_FURNACE);
                         entries.add(ModBlocks.FLOWER);
                         entries.add(ModBlocks.TNT);
+                        entries.add(ModBlocks.LIGHT);
 
                     }).build());
 
